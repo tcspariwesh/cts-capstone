@@ -1,0 +1,24 @@
+{
+  "name": "cts-capstone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcspariwesh/cts-capstone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcspariwesh/cts-capstone/issues"
+  },
+  "homepage": "https://github.com/tcspariwesh/cts-capstone#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.2"
+  }
+}
