@@ -1,9 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const dbConfig = require("./src/config/db.config");
-
 const app = express();
-
 var corsOptions = {
   origin: "http://localhost:8081"
 };
@@ -14,6 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 const db = require("./src/models");
 const Book = db.books;
+//validation middleware
 
 db.mongoose.connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
   useNewUrlParser: true,
@@ -27,7 +26,6 @@ db.mongoose.connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`
     process.exit();
   });
 require("./src/routes/book.routes")(app);
-
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

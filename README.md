@@ -1,3 +1,6 @@
 # cts-capstone
 25-sept
 Add Books: Authenticated users can add books (title, author, genre, year, description)
+
+#API documentation
+npm install --save-dev swagger-ui-express
