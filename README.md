@@ -27,3 +27,4 @@ HTTPOnly cookies are cookies that have the HttpOnly flag, which prevents client-
 #API documentation
 npm install --save-dev swagger-ui-express
 
+mysql installer: https://drive.google.com/file/d/1mTgOmrlMFclpBtp2zYnpd5CJb39DXZUl/view?usp=sharing
