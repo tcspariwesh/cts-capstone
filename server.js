@@ -11,9 +11,10 @@ app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 const db = require("./src/models");
+const cookieParser = require('cookie-parser'); //application middleware to handle cookies
+app.use(cookieParser());
 const Book = db.books;
 //validation middleware
-
 db.mongoose.connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
   useNewUrlParser: true,
   useUnifiedTopology: true
